@@ -25,7 +25,7 @@ jobs:
       - name: Deploy to Heroku
         run: |
           git remote add heroku https://git.heroku.com/obscure-lowlands-75980.git
-          git push heroku main
+          git push heroku master
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 
